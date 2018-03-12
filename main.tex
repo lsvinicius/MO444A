@@ -18,6 +18,7 @@
 \newcommand{\CITEONE}[2]{\mbox{#1 \cite{#2}}}
 \newcommand{\CITETWO}[3]{\mbox{#1 and #2 \cite{#3}}}
 \newcommand{\CITEN}[2]{\mbox{#1 et al. \cite{#2}}}
+\newcommand{\CITEFOUR}[3]{\mbox{#1 et al. \cite{#3}}}
 
 %%% Report beginning %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -37,7 +38,7 @@ Predicting the amount of money a movie can make is a valuable tool when deciding
 
 %%% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-The movie industry might not be able to properly know when a movie will have a high or low revenue. Of course, it is possible for some members of this industry to have a good feeling for that, but otherwise, it is unknown. Being able to predict how much income a movie will have is a valuable tool before producing a movie. With this information in hand, the studio could know if it will spend too much on the movie or even if it is viable to produce the movie. 
+The movie industry might not be able to properly know when a movie will have a high or low revenue. One exemple of this, is the movie avengers, Age of Ultron that cost \$250 milions without investment return guarantee \cite{Inf_Report2}. Of course, it is possible for some members of this industry to have a good feeling for that, but otherwise, it is unknown. Being able to predict how much income a movie will have is a valuable tool before producing a movie. With this information in hand, the studio could know if it will spend too much on the movie or even if it is viable to produce the movie. 
 
 %%% Add section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem}
@@ -60,7 +61,7 @@ The approach illustrated in \ref{fig:methodology} can be described in the follow
   \item Find regressive model for each of the relevant clusters.
 \end{enumerate}
 
-One could argue that this approach is not optimal, since it could be run a regression model directly in the dataset, however, the accuracy of a prediction model might be increased by taking in consideration other unknown variables that might be related to the prediction of the outcomes \cite{Inf_Front}. By adding clustering, it is possible to analyze what features are more relevant for the revenue of a movie.
+One could argue that this approach is not optimal, since it could be run a regression model directly in the dataset, however, the accuracy of a prediction model might be increased by taking in consideration other unknown variables that might be related to the prediction of the outcomes \cite{Inf_Report}. By adding clustering, it is possible to analyze what features are more relevant for the revenue of a movie.
 
 It is important to note that this paper does not discard the idea of creating a regression model without the clustering step, but at first the authors prefer to study the impact of the features in the movies and clustering would be helpful in that purpose.
 
